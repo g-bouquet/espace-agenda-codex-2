@@ -4,6 +4,7 @@ import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
 import { toast } from 'sonner';
 import axios from 'axios';
+import HeroSection from '../components/HeroSection';
 
 const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
 const API = `${BACKEND_URL}/api`;
@@ -62,19 +63,12 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
-      <section className="relative bg-gradient-to-b from-sky-50 to-white py-20 lg:py-28">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-3xl text-center">
-            <h1 className="text-4xl font-bold font-heading tracking-tight text-foreground sm:text-5xl">
-              Contactez-nous
-            </h1>
-            <p className="mt-6 text-lg leading-8 text-muted-foreground">
-              Une question ? Un projet ? Notre équipe est à votre écoute pour vous accompagner dans la mise en place de votre solution de prise de rendez-vous.
-            </p>
-          </div>
-        </div>
-      </section>
+      <HeroSection
+        title="Contactez-nous"
+        description="Une question ? Un projet ? Notre équipe est à votre écoute pour vous accompagner dans la mise en place de votre solution de prise de rendez-vous."
+        showCta={false}
+        backgroundImage="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?w=1920&q=80"
+      />
 
       {/* Contact Section */}
       <section className="py-20 bg-white">
