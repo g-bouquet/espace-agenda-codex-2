@@ -33,9 +33,11 @@ const Exemples = () => {
   return (
     <div className="min-h-screen">
       <HeroSection
-          </div>
-        </div>
-      </section>
+        title="Des exemples concrets d'utilisation"
+        titleHighlight="pour votre métier"
+        description="Découvrez comment Espace Agenda s'adapte à votre activité et transforme votre gestion quotidienne des rendez-vous."
+        backgroundImage="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1920&q=80"
+      />
 
       {/* Use Cases */}
       <section className="py-20 bg-white">
