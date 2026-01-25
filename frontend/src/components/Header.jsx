@@ -27,7 +27,7 @@ const Header = () => {
             <img 
               src="/logo-espace-agenda.png" 
               alt="Espace Agenda" 
-              className="h-10 w-auto"
+              className="h-[70px] w-auto"
             />
           </Link>
         </div>
