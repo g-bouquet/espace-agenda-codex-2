@@ -73,7 +73,7 @@ const Blog = () => {
       <section className="py-20 bg-white">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {blogPosts.map((post) => (
+            {posts.map((post) => (
               <Card key={post.id} className="border-neutral-200 hover:border-amber-700 transition-all duration-300 hover:shadow-lg overflow-hidden group">
                 <div className="aspect-video w-full overflow-hidden">
                   <img 
