@@ -60,12 +60,19 @@ const Home = () => {
           </div>
 
           <div className="mx-auto mt-16 grid max-w-5xl grid-cols-1 gap-8 lg:grid-cols-3">
-            <Card className="border-neutral-200 hover:border-amber-700 transition-all duration-300 hover:shadow-lg">
+            <Card className="border-neutral-200 hover:border-amber-700 transition-all duration-300 hover:shadow-lg overflow-hidden">
+              <div className="aspect-video w-full overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80" 
+                  alt="Professionnel de santé"
+                  className="w-full h-full object-cover"
+                />
+              </div>
               <CardContent className="pt-6">
-                <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-amber-100 text-amber-700">
+                <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-amber-100 text-amber-700 mb-6">
                   <Clock className="h-6 w-6" />
                 </div>
-                <h3 className="mt-6 text-xl font-semibold text-neutral-900">
+                <h3 className="text-xl font-semibold text-neutral-900">
                   Gain de temps immédiat
                 </h3>
                 <p className="mt-3 text-neutral-600">
@@ -74,12 +81,19 @@ const Home = () => {
               </CardContent>
             </Card>
 
-            <Card className="border-neutral-200 hover:border-amber-700 transition-all duration-300 hover:shadow-lg">
+            <Card className="border-neutral-200 hover:border-amber-700 transition-all duration-300 hover:shadow-lg overflow-hidden">
+              <div className="aspect-video w-full overflow-hidden">
+                <img 
+                  src="https://images.pexels.com/photos/9064708/pexels-photo-9064708.jpeg?w=800&q=80" 
+                  alt="Consultation professionnelle"
+                  className="w-full h-full object-cover"
+                />
+              </div>
               <CardContent className="pt-6">
-                <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-sky-100 text-sky-800">
+                <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-sky-100 text-sky-800 mb-6">
                   <Shield className="h-6 w-6" />
                 </div>
-                <h3 className="mt-6 text-xl font-semibold text-neutral-900">
+                <h3 className="text-xl font-semibold text-neutral-900">
                   100% votre marque
                 </h3>
                 <p className="mt-3 text-neutral-600">
@@ -88,12 +102,19 @@ const Home = () => {
               </CardContent>
             </Card>
 
-            <Card className="border-neutral-200 hover:border-amber-700 transition-all duration-300 hover:shadow-lg">
+            <Card className="border-neutral-200 hover:border-amber-700 transition-all duration-300 hover:shadow-lg overflow-hidden">
+              <div className="aspect-video w-full overflow-hidden">
+                <img 
+                  src="https://images.pexels.com/photos/6129653/pexels-photo-6129653.jpeg?w=800&q=80" 
+                  alt="Accompagnement professionnel"
+                  className="w-full h-full object-cover"
+                />
+              </div>
               <CardContent className="pt-6">
-                <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-amber-100 text-amber-700">
+                <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-amber-100 text-amber-700 mb-6">
                   <Zap className="h-6 w-6" />
                 </div>
-                <h3 className="mt-6 text-xl font-semibold text-neutral-900">
+                <h3 className="text-xl font-semibold text-neutral-900">
                   Installation et accompagnement
                 </h3>
                 <p className="mt-3 text-neutral-600">
