@@ -9,11 +9,15 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Logo et description */}
           <div className="md:col-span-2">
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xl">EA</span>
-              </div>
-              <span className="text-xl font-semibold">Espace Agenda</span>
+            <div className="mb-4">
+              <Link to="/" className="inline-block">
+                <img 
+                  src="/logo-espace-agenda.png" 
+                  alt="Espace Agenda" 
+                  className="h-16 w-auto brightness-0 invert"
+                  style={{ filter: 'brightness(0) invert(1)' }}
+                />
+              </Link>
             </div>
             <p className="text-sky-100 text-sm max-w-md">
               La solution de prise de rendez-vous en ligne 100% en marque blanche, pensée pour les praticiens et professionnels de l'accompagnement.
