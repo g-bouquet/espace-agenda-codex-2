@@ -46,8 +46,8 @@ const Home = () => {
           }}
         >
           <img 
-            src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=1920&q=80" 
-            alt="Espace professionnel"
+            src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=1920&q=80" 
+            alt="Accompagnement professionnel"
             className="w-full h-full object-cover scale-110"
           />
           {/* Overlay gradient pour la lisibilité */}
