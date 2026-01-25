@@ -146,7 +146,7 @@ const Offres = () => {
               Besoin d'une configuration spécifique ? Contactez-nous pour un devis personnalisé.
             </p>
             <Link to="/contact">
-              <Button size="lg" className="bg-primary hover:bg-primary-hover text-white">
+              <Button size="lg" className="bg-primary hover:bg-primary-hover text-white font-medium rounded-sm shadow-md hover:shadow-lg transition-all duration-300">
                 Discuter de mon projet
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
