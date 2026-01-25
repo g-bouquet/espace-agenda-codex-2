@@ -408,13 +408,10 @@ metadata:
 
 test_plan:
   current_focus:
-    - "Homepage - Logo and CTA buttons"
-    - "Blog Page - API Integration"
-    - "Individual Blog Post - API Integration"
-    - "Contact Form - API Integration"
-    - "Form Validation - HTML5 validation"
-    - "Navigation - All pages and links"
-    - "Responsive Design - Mobile compatibility"
+    - "Hero Component Refactoring - All Pages"
+    - "Parallax Effects Verification"
+    - "Admin Functionality Testing"
+    - "Navigation and Responsive Design"
   stuck_tasks: []
   test_all: true
   test_priority: "high_first"
