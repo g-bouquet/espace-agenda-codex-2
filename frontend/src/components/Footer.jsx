@@ -10,12 +10,7 @@ const Footer = () => {
           {/* Logo et description */}
           <div className="md:col-span-2">
             <Link to="/" className="inline-block mb-4">
-              <img 
-                src="/logo-espace-agenda.png" 
-                alt="Espace Agenda" 
-                className="h-12 w-auto"
-                style={{ filter: 'brightness(0) invert(1)' }}
-              />
+              <span className="text-2xl font-bold text-white">Espace Agenda</span>
             </Link>
             <p className="text-sky-100 text-sm max-w-md">
               La solution de prise de rendez-vous en ligne 100% en marque blanche, pensée pour les praticiens et professionnels de l'accompagnement.
