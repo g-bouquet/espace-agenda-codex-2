@@ -161,16 +161,18 @@ const Home = () => {
                 }
               ].map((item) => (
                 <div key={item.step} className="relative group">
-                  {/* Image with overlay */}
-                  <div className="aspect-square overflow-hidden rounded-lg mb-6">
+                  {/* Image with subtle overlay and badge */}
+                  <div className="relative aspect-square overflow-hidden rounded-lg mb-6">
                     <img 
                       src={item.image} 
                       alt={item.title}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-neutral-900/60 to-transparent"></div>
-                    <div className="absolute bottom-4 left-4">
-                      <div className="flex h-14 w-14 items-center justify-center rounded-lg bg-amber-700 text-white text-2xl font-bold">
+                    {/* Subtle overlay only at bottom */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-neutral-900/20 via-transparent to-transparent"></div>
+                    {/* Badge positioned at top left */}
+                    <div className="absolute top-4 left-4">
+                      <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-amber-700 text-white text-xl font-bold shadow-lg">
                         {item.step}
                       </div>
                     </div>
