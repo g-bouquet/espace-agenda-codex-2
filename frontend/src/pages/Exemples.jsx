@@ -148,15 +148,33 @@ const Exemples = () => {
         </div>
       </section>
 
-      {/* Testimonial placeholder */}
+      {/* Testimonial */}
       <section className="py-20 bg-white">
-        <div className="mx-auto max-w-4xl px-6 lg:px-8">
-          <div className="text-center">
-            <p className="text-xl text-neutral-600 italic mb-6">
-              "Espace Agenda a transformé ma gestion quotidienne. Je gagne un temps précieux que je peux désormais consacrer entièrement à mes patients. La plateforme est intuitive et mes clients apprécient la simplicité de la réservation en ligne."
-            </p>
-            <p className="font-semibold text-neutral-900">Marie L.</p>
-            <p className="text-neutral-600">Psychologue</p>
+        <div className="mx-auto max-w-6xl px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* Image */}
+            <div className="order-2 lg:order-1">
+              <div className="aspect-square overflow-hidden rounded-lg shadow-lg">
+                <img 
+                  src="https://images.pexels.com/photos/8730045/pexels-photo-8730045.jpeg?w=800&q=80" 
+                  alt="Témoignage client satisfait"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+            
+            {/* Content */}
+            <div className="order-1 lg:order-2">
+              <div className="lg:pl-8">
+                <p className="text-2xl text-neutral-700 italic mb-8 leading-relaxed">
+                  "Espace Agenda a transformé ma gestion quotidienne. Je gagne un temps précieux que je peux désormais consacrer entièrement à mes patients. La plateforme est intuitive et mes clients apprécient la simplicité de la réservation en ligne."
+                </p>
+                <div>
+                  <p className="font-semibold text-neutral-900 text-lg">Marie L.</p>
+                  <p className="text-neutral-600">Psychologue</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
