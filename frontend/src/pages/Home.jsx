@@ -8,28 +8,40 @@ const Home = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-b from-sky-50 to-white py-20 lg:py-32">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-3xl text-center">
-            <h1 className="text-4xl font-bold tracking-tight text-neutral-900 sm:text-6xl">
-              Votre solution de prise de rendez-vous{' '}
-              <span className="text-amber-700">en marque blanche</span>
-            </h1>
-            <p className="mt-6 text-lg leading-8 text-neutral-600">
-              Offrez à vos clients une expérience de réservation en ligne fluide et professionnelle, entièrement personnalisée à votre image. Gagnez du temps, réduisez les absences et concentrez-vous sur l'essentiel : votre métier.
-            </p>
-            <div className="mt-10 flex items-center justify-center gap-x-6">
-              <Link to="/contact">
-                <Button size="lg" className="bg-amber-700 hover:bg-amber-800 text-white">
-                  Demander l'installation
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-              </Link>
-              <Link to="/solution">
-                <Button size="lg" variant="outline">
-                  Découvrir la solution
-                </Button>
-              </Link>
+      <section className="relative overflow-hidden">
+        {/* Background Image with Overlay */}
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1920&q=80" 
+            alt="Espace professionnel moderne"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-white/95 via-white/90 to-white"></div>
+        </div>
+        
+        <div className="relative z-10 py-20 lg:py-32">
+          <div className="mx-auto max-w-7xl px-6 lg:px-8">
+            <div className="mx-auto max-w-3xl text-center">
+              <h1 className="text-4xl font-bold tracking-tight text-neutral-900 sm:text-6xl">
+                Votre solution de prise de rendez-vous{' '}
+                <span className="text-amber-700">en marque blanche</span>
+              </h1>
+              <p className="mt-6 text-lg leading-8 text-neutral-600">
+                Offrez à vos clients une expérience de réservation en ligne fluide et professionnelle, entièrement personnalisée à votre image. Gagnez du temps, réduisez les absences et concentrez-vous sur l'essentiel : votre métier.
+              </p>
+              <div className="mt-10 flex items-center justify-center gap-x-6">
+                <Link to="/contact">
+                  <Button size="lg" className="bg-amber-700 hover:bg-amber-800 text-white">
+                    Demander l'installation
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </Button>
+                </Link>
+                <Link to="/solution">
+                  <Button size="lg" variant="outline">
+                    Découvrir la solution
+                  </Button>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
